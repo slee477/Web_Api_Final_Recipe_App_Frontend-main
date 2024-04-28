@@ -1,0 +1,110 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fde4f2; 
+  padding: 20px; 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.recipe-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px; 
+  width: 100%;
+}
+
+.recipe-card {
+  max-width: 300px; 
+}
+
+.recipe-grid {
+  width: 100%;
+}
+
+.recipe-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+.recipe-grid .grid > div {
+  max-width: 100%; 
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.ingredients-list {
+  margin-top: 5px;
+}
+
+.search-input {
+  width: 80%; 
+  max-width: 400px; 
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #021b0d;
+  border-radius: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #021b0d;
+}
+
+.search-button {
+  background-color: #021b0d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #282c34;
+}
